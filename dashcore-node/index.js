@@ -16,7 +16,6 @@ var InsightUI = function(options) {
   } else {
     this.routePrefix = ''; // 'insight'; @cytpm fixed
   }
-  }
 };
 
 InsightUI.dependencies = ['@dashevo/insight-api'];
