@@ -9,16 +9,16 @@ var InsightUI = function(options) {
   if (typeof options.apiPrefix !== 'undefined') {
     this.apiPrefix = options.apiPrefix;
   } else {
-    this.apiPrefix = 'insight-api';
+    this.apiPrefix = 'api'; // 'insight-api'; WL fixed
   }
   if (typeof options.routePrefix !== 'undefined') {
     this.routePrefix = options.routePrefix;
   } else {
-    this.routePrefix = 'insight';
+    this.routePrefix = ''; // 'insight'; WL fixed
   }
 };
 
-InsightUI.dependencies = ['@dashevo/insight-api'];
+InsightUI.dependencies = ['insight-api-dash'];
 
 inherits(InsightUI, BaseService);
 
